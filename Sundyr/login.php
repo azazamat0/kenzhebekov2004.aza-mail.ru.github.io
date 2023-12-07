@@ -2,7 +2,7 @@
 session_start();
 
 // Подключение к базе данных
-$connection = new mysqli("localhost", "root", "", "lab");
+$connection = new mysqli("localhost", "root", "", "nur");
 
 // Проверка соединения
 if ($connection->connect_error) {

@@ -1,0 +1,15 @@
+<?php
+session_start();
+
+// Проверка наличия сессии с именем пользователя
+if (!isset($_SESSION['username'])) {
+    header('Location: form.html');
+    exit();
+}
+
+// Приветственное сообщение
+echo 'Welcome, ' . htmlspecialchars($_SESSION['username']) . '!';
+
+// Закрытие сессии
+session_destroy();
+?>
