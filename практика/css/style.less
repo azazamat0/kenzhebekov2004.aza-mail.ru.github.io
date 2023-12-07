@@ -1,0 +1,299 @@
+/* =============================== Начальные настройки ===============================*/
+body{
+
+}
+.font{
+	font-family: arial;
+}
+h1,h2,h3,h4,h5,h6{
+	color:#666;
+    font-weight: bold;
+	.font
+}
+p{
+	font-size:1.3em;
+}
+/* =============================== section#header ===============================*/
+section#header{
+	background: #fff;
+}
+/* =============================== header ===============================*/
+header{
+	.container{
+    padding: 40px 0;
+    .logo{
+    	font-size: 2em;
+        padding-top: 10px;
+    	color: #ff9125;
+   		text-transform: uppercase;
+        font-weight: bold;
+    	.font
+    }
+    .phone{
+    	font-size: 2em;
+        padding-top: 10px;
+    	color: #666;
+   		text-transform: uppercase;
+    }
+	}
+}
+.phone::before{
+	content: "\f098";
+    font-family: FontAwesome;
+    padding-right: 12px;
+    color: #666;
+}
+
+/* =============================== slider ===============================*/
+#slider{
+	margin-top: 50px;
+	h2,h3{
+		color:#fff;
+		.font
+	}
+}
+.carousel-animate .carousel-indicators > li {
+ margin: 0 2px;
+ background-color: #fff;
+ border-color: rgb(58,36,83);
+ opacity: .7;
+}
+.carousel-animate .carousel-indicators > li.active {
+ width: 10px;
+ height: 10px;
+ opacity: 1;
+}
+.carousel-animate .hero {
+ color: #fff;
+ text-align: center;
+ text-transform: uppercase;
+ text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.75);
+}
+.btn.btn-lg {
+ padding: 10px 40px;
+}
+.btn.btn-hero,
+.btn.btn-hero:hover,
+.btn.btn-hero:focus {
+ color: #fff;
+ background-color: #ff9125;
+ outline: none;
+ margin: 20px auto;
+ text-transform:uppercase;
+ .font
+}
+@media screen and (max-width: 640px) {
+ .hero h1 {
+ font-size: 2em;
+ }
+}
+.carousel-fade .carousel-inner .item {
+ transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+ opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+ opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+ left: 0;
+ transform: translate3d(0, 0, 0);
+}
+.carousel-bg .carousel-inner .item {
+ background-color: darkslategrey;
+ background-size: cover;
+ background-position: center;
+ min-height: 480px;
+}
+/* =============================== advantage ===============================*/
+#advantage{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 40px;
+  background: #f6f2f2;
+	p{
+    font-family: arial;
+    font-weight: bold;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    padding-top: 20px;
+    color: #666;
+	}
+	.col-md-3{
+	padding: 50px 0;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    img{
+    width: 50px;
+    }
+	}
+	.col-md-3:hover{
+		box-shadow: -2.2px -13.8px 73px 0 rgba(0, 0, 0, 0.29);
+	}
+}
+
+    
+/* =============================== about ===============================*/
+#about{
+	margin-top: 50px;
+	margin-bottom: 70px;
+	h1{
+		margin-bottom: 30px;
+		span{
+			border-bottom: 5px solid #fe9025;
+		}
+	}
+	img{
+		width: 100%;
+    padding-top: 30px;
+	}
+	#btn-more{
+		background: transparent;
+		padding: 18px 60px;
+		margin-top: 20px;
+    border: 2px solid #fe9025;
+    border-radius: 5px;
+    color: #fe9025;
+    display: inline-block;
+    font: 700 18.5px 'Open Sans Bold', Arial, sans-serif;
+    letter-spacing: 0.5px;
+    line-height: 15px;
+    text-decoration: none;
+    transition: background 600ms, color 600ms;
+	}
+	#btn-more:hover{
+		background: #fe9025;
+    color: #fff;
+	}
+}
+/* =============================== message ===============================*/
+#message{
+	  background: #f6f2f2;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    h2{
+    	margin-bottom: 30px;
+    	span{
+    		border-bottom: 5px solid #fe9025;
+    	}
+    }
+    label{
+    	color:#666;
+    	margin-bottom: 10px;
+    }
+    #form_email, #form_phone, #form_message{
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    box-shadow: none;
+    }
+    #form_email, #form_phone{
+    	padding: 25px 25px;
+    }
+    #form_message{
+    	height: 249px;
+    	padding: 25px 25px;
+    }
+    #button_contacts{
+    background: #fe9025;
+    padding: 22px 0;
+    width:100%;
+    border: 2px solid #fe9025;
+    color: #fff;
+    cursor: pointer;
+    font: 700 18.5px 'Open Sans', Arial, sans-serif;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: background 600ms, color 600ms;
+    }
+    #button_contacts:hover{
+    background: transparent;
+    color: #fe9025;
+    }
+}
+/* =============================== footer ===============================*/
+footer{
+	background: #313030;
+	padding: 45px 0 30px;
+	#copyright{
+		color: #b8b8b8;
+	}
+	#develop a{
+		color: #b8b8b8;
+    span{
+        color: #fe9025;
+    }
+	}
+}
+/* =============================== АДАПТИВ ===============================*/
+
+@media(min-width:0px) and (max-width:320px) {
+    header{
+        .logo{
+            text-align:center;
+        }
+        .phone{
+            text-align:center;
+            font-size: 2em!important;
+        }
+    }
+    footer{
+        #develop{
+            text-align:center;
+        }
+    }
+}
+
+@media(min-width:321px) and (max-width:480px) {
+	header{
+        .logo{
+            text-align:center;
+        }
+        .phone{
+            text-align:center;
+            font-size: 2em!important;
+        }
+    }
+    footer{
+        #develop{
+            text-align:center;
+        }
+    }
+}
+
+@media(min-width:481px) and (max-width:768px) {
+	   header{
+        .logo{
+            text-align:center;
+        }
+        .phone{
+            text-align:center;
+            font-size: 2em!important;
+        }
+    }
+    footer{
+        #develop{
+            text-align:center;
+        }
+    }
+}
+
+@media(min-width:769px) and (max-width:992px) {
+	
+}
+
+@media(min-width:993px) and (max-width:1200px) {
+	
+}
+
